@@ -1,16 +1,16 @@
-import React from 'react';
-import footerIllustration from '../images/footer-illustration.png';
+import React from "react";
+import footerIllustration from "../images/footer-illustration.png";
 import {
   IoLogoPinterest,
   IoLogoFacebook,
   IoLogoTwitter,
   IoLogoInstagram,
-} from 'react-icons/io5';
+} from "react-icons/io5";
 
 function Footer() {
   const currentDate = new Date();
   return (
-    <footer className="footer" id='contact'>
+    <footer className="footer" id="contact">
       <div
         className="footer-top"
         style={{ backgroundImage: { footerIllustration } }}
@@ -121,10 +121,11 @@ function Footer() {
                 className="input-field"
               >
                 <option value="person">Person</option>
-                <option value="2 person">2 Person</option>
-                <option value="3 person">3 Person</option>
-                <option value="4 person">4 Person</option>
-                <option value="5 person">5 Person</option>
+                <option value="1 person">1 Person</option>
+                <option value="2 people">2 People</option>
+                <option value="3 people">3 People</option>
+                <option value="4 people">4 People</option>
+                <option value="5 people">5 People</option>
               </select>
 
               <input
@@ -141,6 +142,7 @@ function Footer() {
               placeholder="Message"
               aria-label="Message"
               className="input-field"
+              style={{ resize: 'none' }}
             ></textarea>
 
             <button type="submit" className="btn">
@@ -153,10 +155,10 @@ function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <p className="copyright-text">
-            &copy; {currentDate.getFullYear()}{' '}
+            &copy; {currentDate.getFullYear()}{" "}
             <a href="https://jewlius.me" class="copyright-link">
               Tamale
-            </a>{' '}
+            </a>{" "}
             All Rights Reserved.
           </p>
         </div>

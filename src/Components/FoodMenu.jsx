@@ -1,13 +1,53 @@
-import React from 'react';
-import foodMenuOne from '../images/food-menu-1.png';
-import foodMenuTwo from '../images/food-menu-2.png';
-import foodMenuThree from '../images/food-menu-3.png';
-import foodMenuFour from '../images/food-menu-4.png';
-import foodMenuFive from '../images/food-menu-5.png';
-import foodMenuSix from '../images/food-menu-6.png';
-import { IoStarOutline } from 'react-icons/io5';
+import React, { useState } from "react";
+import foodMenuOne from "../images/food-menu-1.png";
+import foodMenuTwo from "../images/food-menu-2.png";
+import foodMenuThree from "../images/food-menu-3.png";
+import foodMenuFour from "../images/food-menu-4.png";
+import foodMenuFive from "../images/food-menu-5.png";
+import foodMenuSix from "../images/food-menu-6.png";
+import { IoStarOutline } from "react-icons/io5";
 
 function FoodMenu() {
+  const [activeFilter, setActiveFilter] = useState("All");
+  
+  const filterBtns = [
+    {
+      id: 1,
+      name: "All",
+    },
+    {
+      id: 2,
+      name: "Pizza",
+    },
+    {
+      id: 3,
+      name: "Burger",
+    },
+    {
+      id: 4,
+      name: "Drinks",
+    },
+    {
+      id: 5,
+      name: "Sandwich",
+    },
+  ];
+
+  const handleFilterClick = (filterName) => {
+    setActiveFilter(filterName);
+  };
+
+  const filterBtn = filterBtns.map((btn) => (
+    <li key={btn.id}>
+      <button 
+        className={`filter-btn ${activeFilter === btn.name ? "active" : ""}`}
+        onClick={() => handleFilterClick(btn.name)}
+      >
+        {btn.name}
+      </button>
+    </li>
+  ));
+
   return (
     <section className="section food-menu" id="food-menu">
       <div className="container">
@@ -22,27 +62,7 @@ function FoodMenu() {
           organism.
         </p>
 
-        <ul className="fiter-list">
-          <li>
-            <button className="filter-btn  active">All</button>
-          </li>
-
-          <li>
-            <button className="filter-btn">Pizza</button>
-          </li>
-
-          <li>
-            <button className="filter-btn">Burger</button>
-          </li>
-
-          <li>
-            <button className="filter-btn">Drinks</button>
-          </li>
-
-          <li>
-            <button className="filter-btn">Sandwich</button>
-          </li>
-        </ul>
+        <ul className="filter-list">{filterBtn}</ul>
 
         <ul className="food-menu-list">
           <li>
@@ -54,7 +74,7 @@ function FoodMenu() {
                   height="300"
                   loading="lazy"
                   alt="Fried Chicken Unlimited"
-                  class="w-100"
+                  className="w-100"
                 />
 
                 <div className="badge">-15%</div>
@@ -235,7 +255,7 @@ function FoodMenu() {
               </div>
 
               <div className="wrapper">
-                <p class="category">Nuggets</p>
+                <p className="category">Nuggets</p>
 
                 <div className="rating-wrapper">
                   <IoStarOutline className="icon" />

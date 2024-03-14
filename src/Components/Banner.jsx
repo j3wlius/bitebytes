@@ -1,8 +1,8 @@
-import React from 'react';
-import bannerOne from '../images/banner-1.jpg'
-import bannerTwo from '../images/banner-2.jpg'
-import bannerThree from '../images/banner-3.jpg'
-import bannerFour from '../images/banner-4.jpg'
+import React from "react";
+import bannerOne from "../images/banner-1.jpg";
+import bannerTwo from "../images/banner-2.jpg";
+import bannerThree from "../images/banner-3.jpg";
+import bannerFour from "../images/banner-4.jpg";
 
 function Banner() {
   return (
