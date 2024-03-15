@@ -120,8 +120,7 @@ function Footer() {
                 aria-label="Total person"
                 className="input-field"
               >
-                <option value="person">Person</option>
-                <option value="1 person">1 Person</option>
+                <option value="person">1 Person</option>
                 <option value="2 people">2 People</option>
                 <option value="3 people">3 People</option>
                 <option value="4 people">4 People</option>
