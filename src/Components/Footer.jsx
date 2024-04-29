@@ -10,7 +10,7 @@ import {
 function Footer() {
   const currentDate = new Date();
   return (
-    <footer className="footer">
+    <footer className="footer" id='contact'>
       <div
         className="footer-top"
         style={{ backgroundImage: { footerIllustration } }}

@@ -8,8 +8,8 @@ function Delivery() {
       <div className="container">
         <div className="delivery-content">
           <h2 className="h2 section-title">
-            Moments Of Happiness <span className="span">Delivered On Time</span> & Right
-            Place
+            Moments Of Happiness <span className="span">Delivered On Time</span>{' '}
+            & Right Place
           </h2>
 
           <p className="section-text">

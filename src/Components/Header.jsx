@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { IoSearchOutline } from 'react-icons/io5';
 
 function Header() {
+  const [isScroll, setIscroll] = useState(false);
+
+  function windowScroll() {
+    setIscroll(window.scrollY >= 150);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', windowScroll);
+    return () => window.removeEventListener('scroll', windowScroll);
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${isScroll ? 'active' : ''}`}>
       <div class="container">
         <h1>
           <a href="#" className="logo">
@@ -38,7 +49,7 @@ function Header() {
             </li>
 
             <li className="nav-item">
-              <a href="#" className="navbar-link">
+              <a href="#contact" className="navbar-link">
                 Contact Us
               </a>
             </li>
