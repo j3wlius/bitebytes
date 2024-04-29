@@ -162,7 +162,7 @@ function Promo() {
 
           <li className="promo-item">
             <div className="promo-card">
-              <div class="card-icon">
+              <div className="card-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"

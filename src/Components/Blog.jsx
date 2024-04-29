@@ -2,6 +2,7 @@ import React from 'react'
 import blogOne from '../images/blog-1.jpg'
 import blogTwo from '../images/blog-2.jpg'
 import blogThree from '../images/blog-3.jpg'
+import { IoCalendarNumberOutline, IoPersonOutline, IoArrowForward} from 'react-icons/io5'
 
 
 function Blog() {
@@ -36,13 +37,13 @@ function Blog() {
                   <div className="card-meta-wrapper">
 
                     <a href="#" className="card-meta-link">
-                      <ion-icon name="calendar-outline"></ion-icon>
+                      <IoCalendarNumberOutline className='icon' />
 
                       <time className="meta-info" datetime="2023-01-01">Jan 01 2023</time>
                     </a>
 
                     <a href="#" className="card-meta-link">
-                      <ion-icon name="person-outline"></ion-icon>
+                      <IoPersonOutline className='icon' />
 
                       <p className="meta-info">Jonathan Smith</p>
                     </a>
@@ -60,7 +61,7 @@ function Blog() {
                   <a href="#" className="btn-link">
                     <span>Read More</span>
 
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    <IoArrowForward className='icon' />
                   </a>
 
                 </div>
@@ -83,13 +84,13 @@ function Blog() {
                   <div className="card-meta-wrapper">
 
                     <a href="#" className="card-meta-link">
-                      <ion-icon name="calendar-outline"></ion-icon>
+                      <IoCalendarNumberOutline className='icon' />
 
                       <time className="meta-info" datetime="2023-01-01">Jan 01 2023</time>
                     </a>
 
                     <a href="#" className="card-meta-link">
-                      <ion-icon name="person-outline"></ion-icon>
+                      <IoPersonOutline className='icon' />
 
                       <p className="meta-info">Jonathan Smith</p>
                     </a>
@@ -107,7 +108,7 @@ function Blog() {
                   <a href="#" className="btn-link">
                     <span>Read More</span>
 
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    <IoArrowForward className='icon' />
                   </a>
 
                 </div>
@@ -130,13 +131,13 @@ function Blog() {
                   <div className="card-meta-wrapper">
 
                     <a href="#" className="card-meta-link">
-                      <ion-icon name="calendar-outline"></ion-icon>
+                      <IoCalendarNumberOutline className='icon' />
 
                       <time className="meta-info" datetime="2023-01-01">Jan 01 2023</time>
                     </a>
 
                     <a href="#" className="card-meta-link">
-                      <ion-icon name="person-outline"></ion-icon>
+                      <IoPersonOutline className='icon' />
 
                       <p className="meta-info">Jonathan Smith</p>
                     </a>
@@ -154,7 +155,7 @@ function Blog() {
                   <a href="#" className="btn-link">
                     <span>Read More</span>
 
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    <IoArrowForward className='icon' />
                   </a>
 
                 </div>
